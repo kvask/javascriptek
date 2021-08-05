@@ -1,0 +1,19 @@
+h1{
+  color: #FF8C00;
+}
+h2{
+  color: #8B008B;
+}
+ul{
+  list-style-type: square;
+}
+ol{
+  list-style-type: upper-roman;
+}
+.magenta{
+  color: #FF00FF;
+  text-decoration: underline;
+}
+.black{
+ text-decoration: underline;
+}

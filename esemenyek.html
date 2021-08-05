@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Események és eseményfigyelők</title>
+</head>
+
+<body>
+    <button id="gomb1">Gomb</button>
+    <button id="gomb2">Szövegváltó</button><br>
+    <label for="szin">Szín: </label><input type="text" id="szin" value="blue"><br>
+    <button id="gomb3">Színváltó</button>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $('#gomb1').click(() => {
+            $('body').append('<p>Igen, most rámkattintottál</p>');
+            console.log("Igen, most rámkattintottál");
+        });
+
+        $('#gomb2').click(() => {
+            $('#gomb1').text('Új szöveg');
+        });
+
+        $('#gomb3').click(() => {
+            let szin = $('#szin').val();
+            $('button').css('background-color', szin);
+            $('#gomb3').attr('disabled', true);
+        });
+    </script>
+</body>
+
+</html>

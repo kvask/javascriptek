@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript feladatok</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <h1 class="fejlec">MyFirst App Codeing Camp<br>
+            JavaScript feladatok megoldása</h1>
+    </nav>
+    <div class="canvas">
+        <h1>A JavaScript alapvető építőelemei</h1>
+        <div class="megoldas">
+            <h1>I./1. Feladat</h1>
+            <p>Használd a for ciklust (for loop) és hozz létre egy függvényt, ami kiírja az első N számot!</p>
+            <label for="number">N = </label><input type="number" id="number" value="" onchange="printNumbersTill(this.value)">
+            <p id="mo1"></p>
+
+        </div>
+
+        <div class="megoldas">
+            <h1>I./2. feladat</h1>
+            <p>Hozz létre egy függvényt, ami egy nevet kap paraméterként, majd visszatér egy személyes üdvözléssel!</p>
+            <label for="name">Név: </label><input type="name" id="name" value="" onchange="getGreetingTo(this.value);">
+            <p id="mo2"></p>
+        </div>
+
+        <div class="megoldas">
+            <h1>II./1. feladat</h1>
+            <p>Hozz létre egy függvényt, ami egy tömböt kap paraméterként, majd sorban kiírja minden elemét!</p>
+            <button onclick="printValues([0, 3, 6, 7, 9])">Tömb kiírása</button>
+            <p id="mo3"></p>
+        </div>
+
+        <div class="megoldas">
+            <h1>II./2. feladat</h1>
+            <p>Módosítsd a korábbi printValues függvényed, hogy for ciklus helyett forEach ciklust használjon!</p>
+            <button onclick="printValues2([10, 20, 30, 50, 12])">Tömb kiírása foreach-el</button>
+            <p id="mo4"></p>
+        </div>
+
+        <h1>Bevezetés a jQueryhez</h1>
+        <div class="megoldas">
+            <h1>1. feladat</h1>
+            <p>Keresd elő az első feladat megoldását a HTML-es napról
+                Hozz létre egy scripts.js fájlt ugyanabban a mappában, mint az index.html
+                Illeszd be a jQueryt és a script fájlod a HTML fájl végére, a záró body címke előtt</p>
+            <p>Rendelj id-t a 3 kék HTML elemhez a HTML fájlban
+                pl. id="fox-1", id="fox-2", …
+                JavaScript használatával (amit a scriptek.js fájlba írsz):
+            <ul>
+                <li>változtasd meg az első kék doboz szövegét “Velox”-ról “Macrotis”-ra,</li>
+                <li>változtasd meg a második kék doboz keretének színét kékről lilára,</li>
+                <li>változtasd meg mindhárom kék doboz háttérszínét sárgára</li>
+            </ul>
+            </p>
+
+            <p id="fox-1" class="fox">Velox</p>
+            <p id="fox-2" class="fox">Zerda</p>
+            <p id="fox-3" class="fox">Lagopus</p>
+
+
+        </div>
+
+        <div class="megoldas">
+            <h1>2. feladat</h1>
+
+            <ul>
+                <li>Keresd elő a második feladat megoldását a HTML-es napról</li>
+                <li>Hozz létre és rendelj a HTML fájlodhoz egy scripts.js fájlt, mint az 1. feladatban</li>
+                <li>Rendelj különböző osztály neveket (class name) a HTML fájlban található 4 elemhez</li>
+                <li>Hozz létre változókat a következő nevekkel és értékekkel:
+                    <ul>
+                        <li>color: purple</li>
+                        <li>number: 10</li>
+                        <li>word: cool</li>
+                    </ul>
+                </li>
+
+                <li>Változtasd meg az első doboz háttérszínét lilára, ha a color változó értéke purple</li>
+                <li>Változtasd meg a második HTML elem szövegét az alábbi kritérium alapján:
+                    <ul>
+                        <li>ha a number nagyobb, mint 100: wow, de nagy szám</li>
+                        <li>különben: ez csak egy közönséges szám</li>
+                    </ul>
+                </li>
+                <li>Változtasd meg a harmadik elem szövegét arra, hogy A DOM Ereje, ha a word értéke az, hogy cool, különben pedig változtasd meg erre a negyedik elem szövegét</li>
+
+                <div class="egtajak">
+
+                    <p class="north">North</p>
+                    <p class="east">East</p>
+                    <p class="south">South</p>
+                    <p class="west">West</p>
+
+                </div>
+            </ul>
+        </div>
+
+        <h1>A DOM manipulálása jQueryvel</h1>
+        <div>
+            <h1>1. feladat</h1>
+            <ul>
+                <li>Keresd elő a HTML-es napról a negyedik feladatra készült megoldásodat</li>
+                <li>Hozz létre egy script.js fájlt, majd illeszd be a .html fájlba a
+                    script címke használatával</li>
+                <li>Hozz létre egy tömböt, ami tartalmazza a saját neved, valamint azon kívül néhány másik nevet is</li>
+                <li>A forEach ciklus használatával add hozzá a neveket egy listához (ul)</li>
+                <li>(Szorgalmi) A saját neved legyen félkövér</li>
+            </ul>
+            <a href="lista.html">A lista feladat</a>
+
+        </div>
+        <div>
+            <h1>2. Feladat</h1>
+            <ul>
+                <li>Folytasd a munkát az előző feladatban használt fájlokkal</li>
+                <li>Hozd létre a következő objektumot:</li>
+                <li>Adj új tartalmat az oldal végéhez: a title legyen egy fejlécben (pl. h1), a text pedig egy bekezdésben (p)</li>
+                <li>Megoldás az előző feladatnál.</li>
+            </ul>
+        </div>
+        <h1>Események és eseményfigyelők</h1>
+        <div>
+            <a href="esemenyek.html">Megoldás</a>
+            <br>
+            <h1>Adj új funkciókat az eseményfigyelőidhez</h1>
+            <p>Megoldás a fenti linken.</p>
+        </div>
+        <h1>Számláló</h1>
+        <div>
+            <a href="szamlalo.html"></a>
+
+        </div>
+        <h1>Todo lista</h1>
+
+
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="scriptek.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
